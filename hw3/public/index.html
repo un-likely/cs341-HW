@@ -1,0 +1,81 @@
+<!-- Leonie Freytag -->
+<!-- Cheesecake Order Form ugly version -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="stylesheets/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Cheesecake Order Form</h1>
+    <img src="https://static.timesofisrael.com/blogs/uploads/2021/06/GettyImages-1205169550.jpg" alt="Cheesecake Slice" width='135' height='135'>
+
+    <form>
+      <label for="quantity">Quantity:</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <br>
+
+        <h4>Toppings:</h4>
+        <input type="radio" id="plain" name="topping" value="plain" checked>
+        <label for="plain">Plain</label>
+
+        <input type="radio" id="chocolate" name="topping" value="chocolate">
+        <label for="chocolate">Chocolate</label>
+
+        <input type="radio" id="strawberry" name="topping" value="strawberry">
+        <label for="strawberry">Strawberry</label>
+
+
+        <br>
+
+        <h4>Note:</h4>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+  
+    <h2>Orders for </h2>
+
+    <div class="dropdown">
+      <button class="dropbtn">Jan</button>
+      <div class="dropdown-content">
+        <a href="#">Jan</a>
+        <a href="#">Feb</a>
+        <a href="#">Mar</a>
+        <a href="#">Apr</a>
+        <a href="#">May</a>
+        <a href="#">Jun</a>
+        <a href="#">Jul</a>
+        <a href="#">Aug</a>
+        <a href="#">Sep</a>
+        <a href="#">Oct</a>
+        <a href="#">Nov</a>
+        <a href="#">Dec</a>
+      </div>
+    </div>
+
+</body>
+</html>
