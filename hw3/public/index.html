@@ -1,0 +1,89 @@
+<!-- Leonie Freytag -->
+<!-- Cheesecake Order Form ugly version -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" href="stylesheets/styles.css"> <!-- External CSS file link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascripts/script.js"></script> <!-- Link to external JavaScript file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="stylesheets/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <!-- website header -->
+    <h1>Cheesecake Order Form</h1>
+    <!-- cheesecake image -->
+    <img src="https://static.timesofisrael.com/blogs/uploads/2021/06/GettyImages-1205169550.jpg" alt="Cheesecake Slice" width='135' height='135'>
+
+    <!-- order form with dropdown for quentity, radio buttons for toppings, text box for notes, and button to submit -->
+    <form>
+      <!-- quantity dropdown -->
+      <label for="quantity">Quantity:</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <br>
+	
+	<!-- toppings radio buttons -->
+        <h4>Toppings:</h4>
+        <input type="radio" id="plain" name="topping" value="plain" checked>
+        <label for="plain">Plain</label>
+
+        <input type="radio" id="chocolate" name="topping" value="chocolate">
+        <label for="chocolate">Chocolate</label>
+
+        <input type="radio" id="strawberry" name="topping" value="strawberry">
+        <label for="strawberry">Strawberry</label>
+
+
+        <br>
+	
+	<!-- text box for additional notes -->
+        <h4>Note:</h4>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+
+        <br>
+
+	<!-- submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+  
+    <!-- dropdown button for order history for each month -->
+    <h2>Orders for </h2>
+
+    <div class="dropdown">
+      <button class="dropbtn">Jan</button>
+      <div class="dropdown-content" id="months">
+        <a href="Jan">Jan</a>
+        <a href="Feb">Feb</a>
+        <a href="Mar">Mar</a>
+        <a href="Apr">Apr</a>
+        <a href="May">May</a>
+        <a href="Jun">Jun</a>
+        <a href="Jul">Jul</a>
+        <a href="Aug">Aug</a>
+        <a href="Sep">Sep</a>
+        <a href="Oct">Oct</a>
+        <a href="Nov">Nov</a>
+        <a href="Dec">Dec</a>
+      </div>
+    </div>
+
+</body>
+</html>
