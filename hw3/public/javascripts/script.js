@@ -18,9 +18,15 @@
                 }
             });
 	    
-	  /*  $("#months").click(function(event) {
-		$(.dropbtn).text() = $(this).text()";
-	    }); */
+	    $("#months").click(function(event) {
+	    	$.post("orders.js",
+		{
+      			name: "Donald Duck",
+      			city: "Duckburg"
+    		},
+    		function(data,status){
+		window.location.href = "http://localhost:3000/orders";
+	    });
 		
         });
 

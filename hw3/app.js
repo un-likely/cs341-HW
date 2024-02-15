@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var ordersRouter = require('./orders');
 
 var app = express();
 
@@ -21,6 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/orders', ordersRouter);
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
